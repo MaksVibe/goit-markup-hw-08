@@ -138,7 +138,6 @@ ul {
 
 .mail-link {
   margin-right: 50px;
-  margin-left: 10px;
 }
 
 .link:hover .mail-icon,
@@ -268,7 +267,6 @@ ul {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white-color);
   line-height: calc(19 / 16);
-  padding-bottom: 30px;
 }
 
 .list-box:not(:last-child) {
@@ -288,17 +286,20 @@ ul {
   line-height: inherit;
 }
 
+.our-team .icon-list {
+  padding: 0 32px 30px 32px;
+}
+
 .icon-network {
   fill: var(--icon-color);
   width: 44px;
   height: 44px;
   padding-top: 12px;
   padding-bottom: 12px;
-  cursor: pointer;
 }
 
-.icon-network:hover,
-.icon-network:focus {
+.icon-list .list-child:hover .icon-network,
+.icon-list .list-child:focus .icon-network {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: var(--white-color);
@@ -309,7 +310,7 @@ ul {
 }
 
 /* Постоянные клиенты */
-.icon-client-logo {
+.clients-list .list-child {
   width: 170px;
   height: 92px;
   fill: var(--icon-color);
@@ -317,33 +318,47 @@ ul {
   border-radius: 4px;
 }
 
+.clients-list .list-child:hover,
 .icon-client-logo:hover {
   fill: var(--accent-color);
   border-color: var(--accent-color);
   cursor: pointer;
 }
+.icon-client-logo {
+  width: inherit;
+  height: inherit;
+}
 
 /* Футер */
-.bot-line {
+.footer {
   background-color: var(--second-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.bot-line .container {
+.footer .container {
   display: flex;
 }
 
-.bot-line .title-third {
+.footer .title-third {
   color: var(--white-color);
   text-transform: uppercase;
   line-height: calc(16 / 14);
-  margin-bottom: 20px;
   margin-top: 12px;
+}
+
+.footer .list {
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 20px;
+  line-height: calc(24 / 14);
 }
 
 .footer-column-networks {
   margin-left: 70px;
+}
+.footer .icon-list {
+  flex-direction: row;
 }
 
 .footer-column-networks .icon-network {
@@ -355,38 +370,26 @@ ul {
   margin-right: 10px;
 }
 
-.footer-column-networks .icon-network:hover,
-.footer-column-networks .icon-network:focus {
-  background-color: var(--accent-color);
-}
-
-.bot-line li:not(first-child) {
+.footer li:not(first-child) {
   margin-bottom: 9px;
 }
 
-.bot-line li:last-child {
+.footer li:last-child {
   margin-bottom: 0px;
 }
 
-.bot-line .list {
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: 20px;
-  line-height: calc(24 / 14);
-}
-
-.bot-line .link {
+.footer .link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.bot-line .address {
+.footer .address {
   font-style: normal;
   color: #ffffff;
 }
 
-.bot-line .link:hover,
-.bot-line .link:focus {
+.footer .link:hover,
+.footer .link:focus {
   color: var(--accent-color);
 }
 
