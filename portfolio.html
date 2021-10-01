@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!-- <meta http-equiv="Content-Type" content="charset=utf-8" /> -->
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/modern-normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>
+      Портфолио - веб-сайты, дизайн, приложения, релкамные проекты | WebStudio
+    </title>
+  </head>
+  <body>
+    <!-- Хедер (шапка) -->
+    <header class="top-line">
+      <div class="container">
+        <nav class="nav-main">
+          <ul class="list">
+            <li>
+              <a href="./index.html" class="logo">
+                Web<span class="top-logo">Studio</span>
+              </a>
+            </li>
+            <li>
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link selected">Портфолио</a>
+            </li>
+            <li>
+              <a href="" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="list">
+          <li class="contact-list-child">
+            <a href="mailto:info@devstudio.com" class="link mail-link">
+              <svg class="mail-icon" aria-label="Написать письмо">
+                <use href="./images/sprite.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contact-list-child">
+            <a href="tel:+380961111111" class="link phone-link"
+              ><svg class="mail-icon" aria-label="Позвонить">
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="hiden">Портфолио студии Веб-студио</h1>
+          <!-- Фильтры Портфолио -->
+          <ul class="list filter">
+            <li class="f-but">
+              <button type="button" class="active-but but">Все</button>
+            </li>
+            <li class="f-but">
+              <button type="button" class="but">Веб-сайты</button>
+            </li>
+            <li class="f-but">
+              <button type="button" class="but">Приложения</button>
+            </li>
+            <li class="f-but">
+              <button type="button" class="but">Дизайн</button>
+            </li>
+            <li class="f-but">
+              <button type="button" class="but">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- Список кейсов портфолио -->
+          <ul class="list portfolio-list">
+            <li class="list-child">
+              <img
+                src="./images/portfolio/technokrjak.jpg"
+                alt="Веб-сайт на экране ноутбука"
+                width="370"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Технокряк</h3>
+                <p class="text">Веб-сайты</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/neworlean-goldenstar.jpg"
+                width="370"
+                alt="Постер с баскетболистами"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third" lang="en">
+                  Постер New Orlean vs Golden Star
+                </h3>
+                <p class="text">Дизайн</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/restaurant-seafood.jpg"
+                width="370"
+                alt="Логотип ресторана Сифуд"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Ресторан Seafood</h3>
+                <p class="text">Приложение</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/prime-project.jpg"
+                width="370"
+                alt="Большие наушники черного цвета"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Проект Prime</h3>
+                <p class="text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/boxes-project.jpg"
+                width="370"
+                alt="Две коробки"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Проект Boxes</h3>
+                <p class="text">Приложение</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/inspiration.jpg"
+                width="370"
+                alt="Веб-сайт на компьютере"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third" lang="en">
+                  Inspiration has no Borders
+                </h3>
+                <p class="text">Веб-сайты</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/mag-limited.jpg"
+                width="370"
+                alt="Журнал Лимитед Эдишн"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Издание Limited Edition</h3>
+                <p class="text">Дизайн</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/lab-project.jpg"
+                width="370"
+                alt="Бирка с надписью Лаб Ель Тэг"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third">Проект LAB</h3>
+                <p class="text">Маркетинг</p>
+              </div>
+            </li>
+            <li class="list-child">
+              <img
+                src="./images/portfolio/growing-business.jpg"
+                width="370"
+                alt="Ноутбук с приложением Гроуин Бизнес"
+                class="image"
+              />
+              <div class="border-box">
+                <h3 class="title-third" lang="en">Growing Business</h3>
+                <p class="text">Приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!--Футер-->
+    <footer class="bot-line">
+      <div class="container">
+        <div class="footer-column-nav">
+          <a href="./index.html" class="logo">
+            Web<span class="bot-logo">Studio</span>
+          </a>
+          <ul class="list">
+            <li>
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+            </li>
+            <li>
+              <a href="mailto:info@example.com" class="link"
+                >info@example.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column-networks">
+          <h3 class="title-third">Присоединяйтесь</h3>
+          <svg class="icon-network">
+            <use href="./images/sprite.svg#icon-instagram-2"></use>
+          </svg>
+          <svg class="icon-network">
+            <use href="./images/sprite.svg#icon-twitter-1"></use>
+          </svg>
+          <svg class="icon-network">
+            <use href="./images/sprite.svg#icon-facebook-1"></use>
+          </svg>
+          <svg class="icon-network">
+            <use href="./images/sprite.svg#icon-linkedin-1"></use>
+          </svg>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
