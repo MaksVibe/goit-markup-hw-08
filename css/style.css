@@ -516,6 +516,7 @@ ul {
   left: 0;
   padding: 63px 24px;
   background-color: var(--card-overlay-color);
+  pointer-events: none;
   opacity: 0;
 }
 .hover-overlay .text-overlay {
