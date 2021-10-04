@@ -14,10 +14,22 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  --active-btn-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   --card-overlay-color: rgba(33, 150, 243, 0.9);
   --backdrop-overlay: rgba(0, 0, 0, 0.2);
   --modalbut-border-color: 1px solid rgba(0, 0, 0, 0.1);
   --padding: 94px;
+  --transform-text: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-bgc: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-icon: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-border: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transform-box-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -112,8 +124,7 @@ ul {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--trnsform-text);
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -161,8 +172,7 @@ ul {
   top: calc(100% - 3px);
   opacity: 0;
   transform: scale(0);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-bgc);
 }
 
 .nav-main .link:hover::before,
@@ -178,8 +188,7 @@ ul {
   height: 16px;
   fill: var(--text-color);
   transform: translateY(20%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-icon);
 }
 
 .mail-link {
@@ -299,7 +308,6 @@ ul {
   font-weight: bold;
   font-size: 16px;
   line-height: calc(30 / 16);
-  /* identical to box height, 30 px or 187% */
 
   cursor: pointer;
   letter-spacing: 0.06em;
@@ -409,16 +417,14 @@ ul {
   border-radius: 50%;
   padding-top: 12px;
   padding-bottom: 12px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-bgc);
 }
 
 .icon-network {
   fill: var(--icon-color);
   width: 20px;
   height: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-icon);
 }
 
 .our-team .link:hover,
@@ -443,8 +449,7 @@ ul {
   fill: var(--icon-color);
   border: 1px solid var(--icon-color);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-border);
 }
 
 .clients-list .list-child:hover,
@@ -458,8 +463,7 @@ ul {
 .icon-client-logo {
   width: inherit;
   height: inherit;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-icon);
 }
 
 /* Футер */
@@ -488,8 +492,7 @@ ul {
 }
 
 .footer-column-nav .link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-text);
 }
 
 .footer-column-networks {
@@ -507,8 +510,7 @@ ul {
   display: block;
   background-color: var(--icon-bg-color);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-bgc);
 }
 
 .footer-column-networks .icon-network {
@@ -564,11 +566,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
-
   transition-property: background-color, color, box-shadow, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -579,8 +576,7 @@ ul {
   background-color: var(--accent-color);
   /* shadow-middle */
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--active-btn-shadow);
   border-radius: 4px;
   border-width: 0px;
   color: white;
@@ -600,8 +596,7 @@ ul {
   background-color: var(--accent-color);
   /* shadow-middle */
 
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--active-btn-shadow);
   border-radius: 4px;
   border-width: 0px;
   color: white;
@@ -612,34 +607,37 @@ ul {
   display: block;
 }
 
-.card-link {
+.portfolio-list .list-child {
   display: block;
   position: relative;
+}
+
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
 .card-link .text-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   padding: 63px 24px;
 
   pointer-events: none;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-box-shadow);
 
   background-color: var(--card-overlay-color);
   color: var(--white-color);
   font-size: 18px;
   line-height: calc(28 / 18);
-  opacity: 0;
 }
 
-.portfolio-list .list-child:hover .text-overlay,
-.portfolio-list .list-child:focus .text-overlay {
-  opacity: 1;
+.card-link:hover .text-overlay,
+.card-link:focus .text-overlay {
+  transform: translateY(-100%);
 }
 
 .border-box {
@@ -666,8 +664,7 @@ ul {
 }
 
 .portfolio-list .list-child {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--transform-box-shadow);
 }
 
 .portfolio-list .list-child:hover,
