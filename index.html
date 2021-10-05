@@ -414,6 +414,7 @@
           </ul>
         </div>
       </section>
+      <!-- модальное окно -->
       <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
           <button type="button" class="close-btn" data-close-btn>
@@ -421,6 +422,59 @@
               <use href="./images/sprite.svg#vector"></use>
             </svg>
           </button>
+          <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="form-field">
+            <label class="input-label" for="name">Имя</label>
+            <input class="input-field" type="text" name="name" id="name" />
+            <svg class="input-field-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="input-label" for="phone">Телефон</label>
+            <input class="input-field" type="text" name="phone" id="phone" />
+            <svg class="input-field-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label class="input-label" for="mail">Почта</label>
+            <input class="input-field" type="text" name="mail" id="mail" />
+            <svg class="input-field-icon" width="18px" height="18px">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="form-field">
+            <label for="input-text" class="input-label">
+              Комментарий
+            </label>
+            <textarea
+              name="feedback"
+              rows="5"
+              placeholder="Введите текст"
+              class="input-field input-field-text"
+              id="input-text"
+            ></textarea>
+          </div>
+          <input
+            type="checkbox"
+            class="form-checkbox visually-hidden"
+            name="policy"
+            id="policy"
+          />
+          <label for="policy" class="check-text">
+            <span class="check-item">
+              <svg class="check-icon" width="11" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;<a
+              href=""
+              class="policy-link"
+              >Условия договора</a
+            >
+          </label>
+          <button type="submit" class="form-btn">Отправить</button>
         </div>
       </div>
     </main>
@@ -489,6 +543,28 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="mail-form">
+          <h3 class="title-third">Подпишитесь на рассылку</h3>
+          <form
+            class="signup-form"
+            name="signup-form"
+            autocomplete="on"
+            novalidate
+          >
+            <label>
+              <input
+                class="input-field"
+                type="email"
+                name="email"
+                placeholder="E-mail" /></label
+            ><button type="submit" class="subscribe-btn">
+              Подписаться
+              <svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
