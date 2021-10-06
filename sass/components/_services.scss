@@ -1,0 +1,27 @@
+// Чем мы занимаемся
+.services {
+  &-image {
+    display: block;
+  }
+  &-list__child {
+    position: relative;
+  }
+  &-link {
+    text-decoration: none;
+  }
+  &-link__overlay {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: $bg-card-overlay;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+  &-text {
+    text-align: center;
+    color: $white-color;
+    font-weight: bold;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+  }
+}

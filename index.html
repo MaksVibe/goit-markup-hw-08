@@ -9,9 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>
       Студия WebStudio - макеты веб-сайтов, приложений, актуальные маркетинговые
       и дизайнерские решения
@@ -19,38 +17,44 @@
   </head>
   <body>
     <!-- Хедер (шапка) -->
-    <header class="top-line">
-      <div class="container">
-        <nav class="nav-main">
-          <ul class="list">
+    <header class="header">
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="list nav-list">
             <li>
               <a href="./index.html" class="logo">
-                Web<span class="top-logo">Studio</span>
+                Web<span class="logo-header">Studio</span>
               </a>
             </li>
-            <li class="nav-child">
-              <a href="./index.html" class="link selected">Студия</a>
+            <li>
+              <a
+                href="./index.html"
+                class="header-link nav-list__link nav-list__selected"
+                >Студия</a
+              >
             </li>
-            <li class="nav-child">
-              <a href="./portfolio.html" class="link">Портфолио</a>
+            <li>
+              <a href="./portfolio.html" class="header-link nav-list__link"
+                >Портфолио</a
+              >
             </li>
-            <li class="nav-child">
-              <a href="" class="link">Контакты</a>
+            <li>
+              <a href="" class="header-link nav-list__link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list">
-          <li class="contact-list-child">
-            <a href="mailto:info@devstudio.com" class="link mail-link">
-              <svg class="mail-icon" aria-label="Написать письмо">
+        <ul class="list header-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="header-link mail-link">
+              <svg class="header-contacts__icon" aria-label="Написать письмо">
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-list-child">
-            <a href="tel:+380961111111" class="link phone-link"
-              ><svg class="mail-icon" aria-label="Позвонить">
+          <li>
+            <a href="tel:+380961111111" class="header-link phone-link"
+              ><svg class="header-contacts__icon" aria-label="Позвонить">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -62,7 +66,7 @@
     <main>
       <!-- Герой -->
       <section class="section hero">
-        <div class="container">
+        <div class="container hero-container">
           <h1 class="hero-title">
             Эффективные решения<br />
             для вашего бизнеса
@@ -73,45 +77,45 @@
         </div>
       </section>
       <!-- Блок Особенности -->
-      <section class="section features">
+      <section class="section benefits">
         <div class="container">
-          <h2 class="hiden">Особенности</h2>
-          <ul class="list">
-            <li class="list-child">
-              <svg class="feature-icon" aria-label="Внимание к детялям">
+          <h2 class="visually-hidden">Преимущества</h2>
+          <ul class="list benefits-list">
+            <li class="benefits-list__child">
+              <svg class="benefits-icon" aria-label="Внимание к детялям">
                 <use href="./images/sprite.svg#icon-Group"></use>
               </svg>
-              <h3 class="title-third">Внимание к детялям</h3>
+              <h3 class="benefits-title">Внимание к детялям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="list-child">
-              <svg class="feature-icon" aria-label="Пунктуальност">
+            <li class="benefits-list__child">
+              <svg class="benefits-icon" aria-label="Пунктуальност">
                 <use href="./images/sprite.svg#icon-clock-1"></use>
               </svg>
-              <h3 class="title-third">Пунктуальность</h3>
+              <h3 class="benefits-title">Пунктуальность</h3>
               <p class="text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="list-child">
-              <svg class="feature-icon" aria-label="Планирование">
+            <li class="benefits-list__child">
+              <svg class="benefits-icon" aria-label="Планирование">
                 <use href="./images/sprite.svg#icon-diagram-1"></use>
               </svg>
-              <h3 class="title-third">Планирование</h3>
+              <h3 class="benefits-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="list-child">
-              <svg class="feature-icon" aria-label="Современные технологии">
+            <li class="benefits-list__child">
+              <svg class="benefits-icon" aria-label="Современные технологии">
                 <use href="./images/sprite.svg#icon-astronaut-1"></use>
               </svg>
-              <h3 class="title-third">Современные технологии</h3>
+              <h3 class="benefits-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -121,43 +125,46 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section what-we-do">
-        <h2 class="title-second">Чем мы занимаемся</h2>
+      <section class="section servises">
         <div class="container">
-          <ul class="list">
-            <li class="list-child">
-              <a href="" class="link">
+          <h2 class="title-second">Чем мы занимаемся</h2>
+          <ul class="list servises-list">
+            <li class="servises-list__child">
+              <a href="#" class="servises-link">
                 <img
+                  class="servises-image"
                   src="./images/what_we_do.jpg"
                   alt="Программирование"
                   width="370"
                 />
-                <div class="link-overlay">
-                  <p class="text">Десктопные приложения</p>
+                <div class="servises-link__overlay">
+                  <p class="servises-text">Десктопные приложения</p>
                 </div>
               </a>
             </li>
-            <li class="list-child">
-              <a href="" class="link">
+            <li class="servises-list__child">
+              <a href="#" class="servises-link">
                 <img
+                  class="servises-image"
                   src="./images/what_we_do2.jpg"
                   alt="Адаптация под мобильные устройства"
                   width="370"
                 />
-                <div class="link-overlay">
-                  <p class="text">Мобильные приложения</p>
+                <div class="servises-link__overlay">
+                  <p class="servises-text">Мобильные приложения</p>
                 </div>
               </a>
             </li>
-            <li class="list-child">
-              <a href="" class="link">
+            <li class="servises-list__child">
+              <a href="#" class="servises-link">
                 <img
+                  class="servises-image"
                   src="./images/what_we_do3.jpg"
                   alt="Разработка дизайна"
                   width="370"
                 />
-                <div class="link-overlay">
-                  <p class="text">Дизайнерские решения</p>
+                <div class="servises-link__overlay">
+                  <p class="servises-text">Дизайнерские решения</p>
                 </div>
               </a>
             </li>
@@ -483,7 +490,7 @@
       <div class="container">
         <div class="footer-column-nav">
           <a href="./index.html" class="logo">
-            Web<span class="bot-logo">Studio</span>
+            Web<span class="logo-footer">Studio</span>
           </a>
           <ul class="list">
             <li>

@@ -1,0 +1,115 @@
+/* Фильтры страницы Портфолио */
+
+.but {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  border-width: 0px;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  font-weight: 500;
+
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  transition-property: background-color, color, box-shadow, transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
+}
+
+.active-but {
+  background-color: var($accent-color);
+  /* shadow-middle */
+
+  box-shadow: var($active-btn-shadow);
+  border-radius: 4px;
+  border-width: 0px;
+  color: white;
+}
+
+.filter {
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter .but:hover,
+.filter .but:focus {
+  background-color: var($accent-color);
+  /* shadow-middle */
+
+  box-shadow: var($active-btn-shadow);
+  border-radius: 4px;
+  border-width: 0px;
+  color: white;
+}
+
+/* Карточки Портфолио */
+.image {
+  display: block;
+}
+
+.portfolio-list .list-child {
+  display: block;
+  position: relative;
+}
+
+.overflow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-link {
+  text-decoration: none;
+  color: var($primary-text-color);
+}
+
+.card-link .text-overlay {
+  position: absolute;
+  padding: 63px 24px;
+
+  pointer-events: none;
+  transition: var($transform-box-shadow);
+
+  background-color: var($card-overlay-color);
+  color: var($white-color);
+  font-size: 18px;
+  line-height: calc(28 / 18);
+}
+
+.card-link:hover .text-overlay,
+.card-link:focus .text-overlay {
+  transform: translateY(-100%);
+}
+
+.border-box {
+  border: 1px solid #eeeeee;
+  border-top: 0px;
+  padding: 20px 24px;
+}
+
+.portfolio-list .title-third {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.portfolio-list .text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
+
+.portfolio-list .list-child {
+  transition: var($transform-box-shadow);
+}
+
+.portfolio-list .list-child:hover,
+.portfolio-list .list-child:focus {
+  box-shadow: var($card-shadow);
+}

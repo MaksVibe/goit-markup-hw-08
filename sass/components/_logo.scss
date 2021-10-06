@@ -1,0 +1,19 @@
+/* Хедер. Логотип */
+.logo {
+  display: block;
+  margin-right: 43px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: $accent-color;
+  line-height: calc(31 / 26);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  &-header {
+    color: $primary-text-color;
+  }
+  &-footer {
+    color: $white-color;
+  }
+}
