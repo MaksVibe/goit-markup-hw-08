@@ -1,7 +1,16 @@
 @import "utils/variables";
+@import "base/reset";
 @import "components/common";
+@import "utils/mixins";
+@import "components/buttons";
 @import "components/header";
 @import "components/logo";
 @import "components/hero";
 @import "components/benefites";
 @import "components/services";
+@import "components/our-team";
+@import "components/networks";
+@import "components/clients";
+@import "components/forms";
+@import "components/footer";
+@import "components/portfolio";

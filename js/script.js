@@ -1,7 +1,7 @@
-const navTabsBtn = $(".but");
+const navTabsBtn = $(".portfolio__filter--btn");
 console.log(navTabsBtn);
 
 navTabsBtn.on("click", (e) => {
-  navTabsBtn.removeClass("active-but");
-  $(e.target).addClass("active-but");
+  navTabsBtn.removeClass("portfolio__filter--active");
+  $(e.target).addClass("portfolio__filter--active");
 });

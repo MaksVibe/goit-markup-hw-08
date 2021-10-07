@@ -1,0 +1,24 @@
+@mixin btn($br, $pt, $pb, $c, $bgc, $fw, $fs, $lh, $ls, $bs, $tr) {
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: $white-color;
+  background-color: $accent-color;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  box-shadow: $btn-box;
+  transition: $transform-bgc;
+}
+// border-radius: 4px;
+// padding-top: 10px;
+// padding-bottom: 10px;
+// color: $white-color;
+// background-color: $accent-color;
+// font-weight: bold;
+// font-size: 16px;
+// line-height: calc(30 / 16);
+// letter-spacing: 0.06em;
+// box-shadow: $btn-box;
+// transition: $transform-bgc;

@@ -1,77 +1,47 @@
 /* Футер */
 .footer {
-  background-color: var($second-background-color);
+  background-color: $second-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer .container {
-  display: flex;
-}
+  &__container {
+    display: flex;
+  }
 
-.footer .title-third {
-  color: var($white-color);
-  text-transform: uppercase;
-  line-height: calc(16 / 14);
-  margin-top: 12px;
-}
+  &__title {
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.03em;
+    margin-top: 12px;
+  }
 
-.footer .list {
-  gap: 9px;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: 20px;
-  line-height: calc(24 / 14);
-}
+  &__networks {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 
-.footer-column-nav .link {
-  transition: var($transform-text);
-}
+  &__list {
+    gap: 9px;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+    line-height: calc(24 / 14);
+  }
 
-.footer-column-networks {
-  margin-left: 70px;
-  margin-right: auto;
-}
+  &__link {
+    transition: $transform-text;
+    text-decoration: none;
+    color: $footer-text;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 
-.footer .icon-list {
-  gap: 10px;
-  flex-direction: row;
-}
-
-.footer-column-networks .link {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  display: block;
-  background-color: var($icon-bg-color);
-  border-radius: 50%;
-  transition: var($transform-bgc);
-}
-
-.footer-column-networks .icon-network {
-  fill: var($white-color);
-}
-
-.footer-column-networks .link:hover,
-.footer-column-networks .link:focus {
-  background-color: var($accent-color);
-}
-
-.footer li:last-child {
-  margin-bottom: 0px;
-}
-
-.footer .link {
-  text-decoration: none;
-  color: var($footer-text);
-}
-
-.footer .address {
-  font-style: normal;
-  color: var($white-color);
-}
-
-.footer .link:hover,
-.footer .link:focus {
-  color: var($accent-color);
+  &__address {
+    font-style: normal;
+    color: $white-color;
+  }
 }

@@ -13,7 +13,10 @@
   &-header {
     color: $primary-text-color;
   }
-  &-footer {
-    color: $white-color;
+  &__footer {
+    padding: 0;
+    &--text {
+      color: $white-color;
+    }
   }
 }

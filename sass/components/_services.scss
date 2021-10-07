@@ -1,23 +1,25 @@
 // Чем мы занимаемся
+
 .services {
-  &-image {
+  &__image {
     display: block;
   }
-  &-list__child {
+
+  &__child {
     position: relative;
   }
-  &-link {
-    text-decoration: none;
+
+  &__link {
+    &--overlay {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      background-color: $bg-card-overlay;
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
   }
-  &-link__overlay {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: $bg-card-overlay;
-    padding-top: 27px;
-    padding-bottom: 27px;
-  }
-  &-text {
+  &__text {
     text-align: center;
     color: $white-color;
     font-weight: bold;

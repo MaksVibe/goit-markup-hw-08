@@ -1,0 +1,81 @@
+// Кнопка Подписки (Футере)
+.subscribe {
+  @include btn(
+    4px,
+    10px,
+    10px,
+    $white-color,
+    $accent-color,
+    bold,
+    16px,
+    alc(30 / 16),
+    0.06em,
+    $btn-box,
+    $transform-bgc
+  );
+
+  display: inline-flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+
+  &__icon {
+    margin-left: 10px;
+    fill: $white-color;
+  }
+
+  &:hover {
+    background-color: $second-accent-color;
+  }
+}
+
+// Кнопка отправки Формы в Модальном окне (Герой)
+.form__btn {
+  @include btn(
+    4px,
+    10px,
+    10px,
+    $white-color,
+    $accent-color,
+    bold,
+    16px,
+    alc(30 / 16),
+    0.06em,
+    $btn-box,
+    $transform-bgc
+  );
+
+  padding-left: 56px;
+  padding-right: 56px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+
+  &:hover,
+  &:focus {
+    background-color: $second-accent-color;
+  }
+}
+
+// Кнопка призыва к действию на главном блоке (Герой)
+.hero__btn {
+  @include btn(
+    4px,
+    10px,
+    10px,
+    $white-color,
+    $accent-color,
+    bold,
+    16px,
+    alc(30 / 16),
+    0.06em,
+    $btn-box,
+    $transform-bgc
+  );
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &:hover {
+    background-color: $second-accent-color;
+  }
+}

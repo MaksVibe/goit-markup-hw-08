@@ -1,32 +1,40 @@
 // Хедер
 .header {
   border-bottom: 1px solid #ececec;
-  &-container {
+
+  &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  &-link {
+
+  &__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     text-decoration: none;
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: $text-color;
     transition: $transform-text;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    &:hover {
+
+    &:hover,
+    &:focus {
       color: $accent-color;
     }
-    &:hover .header-contacts__icon,
-    &:focus .header-contacts__icon {
+
+    &:hover .header__contacts--icon,
+    &:focus .header__contacts--icon {
       fill: $accent-color;
     }
   }
-  &-contacts {
+
+  &__contacts {
     align-items: center;
     gap: 30px;
-    &__icon {
+
+    &--icon {
       width: 20px;
       height: 16px;
       fill: $text-color;

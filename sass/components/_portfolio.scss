@@ -1,115 +1,107 @@
 /* Фильтры страницы Портфолио */
 
-.but {
-  background-color: #f5f4fa;
-  border-radius: 4px;
-  border-width: 0px;
-  padding: 6px 22px;
-
-  font-family: inherit;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  font-weight: 500;
-
-  cursor: pointer;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  transition-property: background-color, color, box-shadow, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-}
-
-.active-but {
-  background-color: var($accent-color);
-  /* shadow-middle */
-
-  box-shadow: var($active-btn-shadow);
-  border-radius: 4px;
-  border-width: 0px;
-  color: white;
-}
-
-.filter {
+.portfolio__filter {
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-}
+  &--btn {
+    background-color: $third-background-color;
+    border-radius: 4px;
+    border-width: 0px;
+    padding: 6px 22px;
 
-.filter .but:hover,
-.filter .but:focus {
-  background-color: var($accent-color);
-  /* shadow-middle */
+    font-family: inherit;
+    font-size: 16px;
+    line-height: calc(26 / 16);
+    font-weight: 500;
 
-  box-shadow: var($active-btn-shadow);
-  border-radius: 4px;
-  border-width: 0px;
-  color: white;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    transition-property: background-color, color, box-shadow, transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0s;
+    &:hover,
+    :focus {
+      background-color: $accent-color;
+      box-shadow: $active-btn-shadow;
+      border-radius: 4px;
+      border-width: 0px;
+      color: $white-color;
+    }
+  }
+  &--active {
+    background-color: $accent-color;
+    box-shadow: $active-btn-shadow;
+    border-radius: 4px;
+    border-width: 0px;
+    color: $white-color;
+  }
 }
 
 /* Карточки Портфолио */
-.image {
-  display: block;
-}
 
-.portfolio-list .list-child {
+// .portfolio__list {
+
+// }
+
+.portfolio__card {
   display: block;
   position: relative;
-}
+  transition: $transform-box-shadow;
+  &:hover,
+  &:focus {
+    box-shadow: $card-shadow;
+  }
 
-.overflow {
-  position: relative;
-  overflow: hidden;
-}
+  &--link {
+    color: $primary-text-color;
+    &:hover .portfolio__card--overlay,
+    &:focus .portfolio__card--overlay {
+      transform: translateY(-100%);
+    }
+  }
 
-.card-link {
-  text-decoration: none;
-  color: var($primary-text-color);
-}
+  &--overflow {
+    position: relative;
+    overflow: hidden;
+  }
 
-.card-link .text-overlay {
-  position: absolute;
-  padding: 63px 24px;
+  &--image {
+    display: block;
+  }
 
-  pointer-events: none;
-  transition: var($transform-box-shadow);
+  &--overlay {
+    position: absolute;
+    padding: 63px 24px;
 
-  background-color: var($card-overlay-color);
-  color: var($white-color);
-  font-size: 18px;
-  line-height: calc(28 / 18);
-}
+    pointer-events: none;
+    transition: $transform-box-shadow;
 
-.card-link:hover .text-overlay,
-.card-link:focus .text-overlay {
-  transform: translateY(-100%);
-}
+    background-color: $card-overlay-color;
+    color: $white-color;
+    font-size: 18px;
+    line-height: calc(28 / 18);
+  }
 
-.border-box {
-  border: 1px solid #eeeeee;
-  border-top: 0px;
-  padding: 20px 24px;
-}
+  &--border {
+    border: 1px solid #eeeeee;
+    border-top: 0px;
+    padding: 20px 24px;
+  }
 
-.portfolio-list .title-third {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: calc(36 / 18);
-  letter-spacing: 0.06em;
-  margin-bottom: 4px;
-}
+  &--title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  }
 
-.portfolio-list .text {
-  font-size: 16px;
-  line-height: calc(30 / 16);
-}
-
-.portfolio-list .list-child {
-  transition: var($transform-box-shadow);
-}
-
-.portfolio-list .list-child:hover,
-.portfolio-list .list-child:focus {
-  box-shadow: var($card-shadow);
+  &--text {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }

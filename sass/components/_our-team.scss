@@ -1,68 +1,31 @@
 /* Наша команда */
 .our-team {
-  background-color: var($third-background-color);
+  background-color: $third-background-color;
   text-align: center;
   font-weight: normal;
-}
 
-.our-team .list-box {
-  box-shadow: var($shadow-box);
-  border-radius: 0px 0px 4px 4px;
-  background-color: var($white-color);
-  line-height: calc(19 / 16);
-}
+  &__member {
+    box-shadow: $shadow-box;
+    border-radius: 0px 0px 4px 4px;
+    background-color: $white-color;
+    line-height: calc(19 / 16);
+  }
 
-.our-team .title-third {
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: inherit;
-}
-.our-team .text {
-  font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 16px;
-  line-height: inherit;
-}
+  &__title {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: inherit;
+  }
 
-.our-team .icon-list {
-  gap: 10px;
-  padding: 0 32px 30px 32px;
-}
-.our-team .icon-list .list-child {
-  flex-basis: calc(100% / 4 - 10px);
-  margin: 0;
-  padding: 0;
-}
+  &__text {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    line-height: inherit;
+  }
 
-.our-team .link {
-  display: block;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  padding: 12px;
-  transition: var($transform-bgc);
-  margin: 0;
-}
-
-.icon-network {
-  fill: var($icon-color);
-  width: 20px;
-  height: 20px;
-  transition: var($transform-icon);
-}
-
-.our-team .link:hover,
-.our-team .link:focus {
-  background-color: var($accent-color);
-  border-radius: 50%;
-}
-
-.icon-list .link:hover .icon-network,
-.icon-list .link:focus .icon-network {
-  fill: var($white-color);
-}
-
-.our-team img {
-  display: block;
+  &__image {
+    display: block;
+  }
 }
