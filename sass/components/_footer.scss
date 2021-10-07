@@ -9,11 +9,8 @@
   }
 
   &__title {
-    font-weight: bold;
     color: $white-color;
-    text-transform: uppercase;
-    line-height: calc(16 / 14);
-    letter-spacing: 0.03em;
+    @include upfont(bold, 14px, calc(16 / 14), 0.03em, uppercase);
     margin-top: 12px;
   }
 

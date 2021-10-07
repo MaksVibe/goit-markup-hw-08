@@ -1,6 +1,9 @@
 // Чем мы занимаемся
 
 .services {
+  &__title {
+    @include h2(bold, 36px, center, calc(42 / 36), 50px);
+  }
   &__image {
     display: block;
   }
@@ -22,8 +25,6 @@
   &__text {
     text-align: center;
     color: $white-color;
-    font-weight: bold;
-    line-height: calc(16 / 14);
-    text-transform: uppercase;
+    @include upfont(bold, 14px, calc(16 / 14), 0.03em, uppercase);
   }
 }

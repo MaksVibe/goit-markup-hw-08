@@ -21,4 +21,7 @@
     height: inherit;
     transition: $transform-icon;
   }
+  &__title {
+    @include h2(bold, 36px, center, calc(42 / 36), 50px);
+  }
 }

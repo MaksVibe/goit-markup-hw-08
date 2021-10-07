@@ -4,18 +4,22 @@
   text-align: center;
   font-weight: normal;
 
+  &__title {
+    @include h2(bold, 36px, center, calc(42 / 36), 50px);
+  }
+
   &__member {
     box-shadow: $shadow-box;
     border-radius: 0px 0px 4px 4px;
     background-color: $white-color;
     line-height: calc(19 / 16);
-  }
 
-  &__title {
-    margin-top: 30px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: inherit;
+    &--title {
+      margin-top: 30px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: inherit;
+    }
   }
 
   &__text {

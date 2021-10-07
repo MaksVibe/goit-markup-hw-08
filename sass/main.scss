@@ -1,16 +1,23 @@
 @import "utils/variables";
 @import "base/reset";
 @import "components/common";
+// Mixins
 @import "utils/mixins";
+// BTNs
 @import "components/buttons";
+// Header
 @import "components/header";
+// LOGO
 @import "components/logo";
 @import "components/hero";
 @import "components/benefites";
 @import "components/services";
 @import "components/our-team";
+// Network's Icons
 @import "components/networks";
 @import "components/clients";
+// Forms
 @import "components/forms";
+// Footer
 @import "components/footer";
 @import "components/portfolio";
