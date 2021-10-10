@@ -1,22 +1,63 @@
 /* Особенности  */
 
 .benefits {
-  padding-bottom: 0px;
-
-  &-title {
-    @include upfont(bold, 14px, calc(16 / 14), 0.03em, uppercase);
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
   }
 
-  &-icon {
-    width: 270px;
+  &__container {
+    margin: 0 auto;
+
+    max-width: 480px;
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      padding-bottom: 0px;
+    }
+  }
+
+  &__title {
+    @include upfont(bold, 14px, calc(16 / 14), 0.03em, uppercase);
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    width: 100%;
+    display: block;
     height: 120px;
     border-radius: 4px;
     background-color: $third-background-color;
     margin-bottom: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 25px 190px;
+    @media screen and (min-width: 768px) {
+      padding: 25px 142px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 25px 100px;
+    }
   }
-  &-list {
-    flex-wrap: nowrap;
+  &__list {
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+    &--child {
+      width: auto;
+      display: block;
+      @media screen and (min-width: 768px) {
+        max-width: 354px;
+      }
+      @media screen and (min-width: 1200px) {
+        max-width: 270px;
+      }
+    }
   }
 }

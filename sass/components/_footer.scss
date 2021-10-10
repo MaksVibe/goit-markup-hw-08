@@ -6,25 +6,71 @@
 
   &__container {
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 480px;
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 60px;
+      flex-basis: calc(100% / 2 - 60px);
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      text-align: start;
+      gap: 0;
+    }
   }
 
   &__title {
     color: $white-color;
     @include upfont(bold, 14px, calc(16 / 14), 0.03em, uppercase);
-    margin-top: 12px;
+    margin-top: 5px;
+    @media screen and (min-width: 1200px) {
+      margin-top: 12px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-left: 76px;
+      margin-right: 70px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+      margin-left: 0;
+    }
   }
 
   &__networks {
-    margin-left: 70px;
-    margin-right: 93px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      margin: 0;
+      margin-right: 93px;
+      flex-wrap: nowrap;
+    }
   }
 
   &__list {
     gap: 9px;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     margin-top: 20px;
     line-height: calc(24 / 14);
+    @media screen and (min-width: 1200px) {
+      align-items: flex-start;
+    }
   }
 
   &__link {

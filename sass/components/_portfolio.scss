@@ -1,9 +1,24 @@
+.portfolio__container {
+  max-width: 480px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
 /* Фильтры страницы Портфолио */
 
 .portfolio__filter {
   gap: 8px;
-  justify-content: center;
   margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
   &--btn {
     background-color: $third-background-color;
     border-radius: 4px;
@@ -43,20 +58,42 @@
 
 /* Карточки Портфолио */
 
-// .portfolio__list {
-
-// }
+.portfolio__list {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
 
 .portfolio__card {
+  width: 100%;
+  max-width: 480px;
+  min-height: 404px;
   display: block;
   position: relative;
   transition: $transform-box-shadow;
+
   &:hover,
   &:focus {
     box-shadow: $card-shadow;
   }
 
+  &:hover .portfolio__card--border,
+  &:focus .portfolio__card--border {
+    border: transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 370px;
+  }
+
   &--link {
+    width: 100%;
     color: $primary-text-color;
     &:hover .portfolio__card--overlay,
     &:focus .portfolio__card--overlay {
@@ -70,10 +107,12 @@
   }
 
   &--image {
+    width: 100%;
     display: block;
   }
 
   &--overlay {
+    width: 100%;
     position: absolute;
     padding: 63px 24px;
 
@@ -90,6 +129,7 @@
     border: 1px solid #eeeeee;
     border-top: 0px;
     padding: 20px 24px;
+    transition: $transform-border;
   }
 
   &--title {

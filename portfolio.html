@@ -3,8 +3,7 @@
   <head>
     <!-- <meta http-equiv="Content-Type" content="charset=utf-8" /> -->
     <meta charset="utf-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,13 +17,16 @@
     <!-- Хедер (шапка) -->
     <header class="header">
       <div class="container header__container">
-        <nav class="nav">
-          <ul class="list nav-list">
-            <li>
-              <a href="./index.html" class="logo">
-                Web<span class="logo-header">Studio</span>
-              </a>
-            </li>
+        <a href="./index.html" class="logo">
+          Web<span class="logo-header">Studio</span>
+        </a>
+        <div class="burger">
+          <svg class="burger__icon">
+            <use href="./images/sprite.svg#icon-menu"></use>
+          </svg>
+        </div>
+        <nav class="header__nav">
+          <ul class="nav-list">
             <li>
               <a href="./index.html" class="header__link nav-list__link"
                 >Студия</a
@@ -42,21 +44,33 @@
             </li>
           </ul>
         </nav>
-        <ul class="list header__contacts">
+        <ul class="header__contacts">
           <li>
-            <a href="mailto:info@devstudio.com" class="header__link">
-              <svg class="header__contacts--icon" aria-label="Написать письмо">
+            <a
+              href="mailto:info@devstudio.com"
+              class="header__link header__contacts--link"
+            >
+              <svg
+                class="header__contacts--icon header__contacts--icon_mail"
+                aria-label="Написать письмо"
+              >
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
+              <span class="header__contacts--cont_mail"
+                >info@devstudio.com</span
+              ></a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="header__link"
+            <a
+              href="tel:+380961111111"
+              class="header__link header__contacts--link"
               ><svg class="header__contacts--icon" aria-label="Позвонить">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
-              +38 096 111 11 11</a
+              <span class="header__contacts--cont_phone"
+                >+38 096 111 11 11</span
+              ></a
             >
           </li>
         </ul>
@@ -64,7 +78,7 @@
     </header>
     <main>
       <section class="section portfolio">
-        <div class="container">
+        <div class="container portfolio__container">
           <h1 class="visually-hidden">Портфолио студии Веб-студио</h1>
           <!-- Фильтры Портфолио -->
           <ul class="portfolio__filter">
@@ -105,7 +119,6 @@
                   <img
                     src="./images/portfolio/technokrjak.jpg"
                     alt="Веб-сайт на экране ноутбука"
-                    width="370"
                     class="portfolio__card--image"
                   />
                   <p class="portfolio__card--overlay">
@@ -125,7 +138,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/neworlean-goldenstar.jpg"
-                    width="370"
                     alt="Постер с баскетболистами"
                     class="portfolio__card--image"
                   />
@@ -148,7 +160,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/restaurant-seafood.jpg"
-                    width="370"
                     alt="Логотип ресторана Сифуд"
                     class="portfolio__card--image"
                   />
@@ -169,7 +180,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/prime-project.jpg"
-                    width="370"
                     alt="Большие наушники черного цвета"
                     class="portfolio__card--image"
                   />
@@ -190,7 +200,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/boxes-project.jpg"
-                    width="370"
                     alt="Две коробки"
                     class="portfolio__card--image"
                   />
@@ -211,7 +220,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/inspiration.jpg"
-                    width="370"
                     alt="Веб-сайт на компьютере"
                     class="portfolio__card--image"
                   />
@@ -234,7 +242,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/mag-limited.jpg"
-                    width="370"
                     alt="Журнал Лимитед Эдишн"
                     class="portfolio__card--image"
                   />
@@ -257,7 +264,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/lab-project.jpg"
-                    width="370"
                     alt="Бирка с надписью Лаб Ель Тэг"
                     class="portfolio__card--image"
                   />
@@ -278,7 +284,6 @@
                 <div class="portfolio__card--overflow">
                   <img
                     src="./images/portfolio/growing-business.jpg"
-                    width="370"
                     alt="Ноутбук с приложением Гроуин Бизнес"
                     class="portfolio__card--image"
                   />
@@ -301,6 +306,7 @@
       </section>
     </main>
     <!--Футер-->
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__nav">

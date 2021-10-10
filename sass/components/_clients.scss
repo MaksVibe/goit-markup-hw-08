@@ -1,12 +1,45 @@
 /* Постоянные клиенты */
 .clients {
+  &__container {
+    @media screen and (max-width: 767px) {
+      max-width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1200px;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width: 480px) {
+      flex-basis: calc(100% / 2 - 30px);
+    }
+    @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - 30px);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 4 - 30px);
+    }
+  }
+
   &__child {
-    width: 170px;
-    height: 92px;
+    width: auto;
+    max-width: 210px;
+    max-height: 92px;
     fill: $icon-color;
     border: 1px solid $icon-color;
     border-radius: 4px;
     transition: $transform-border;
+
+    @media screen and (min-width: 768px) {
+      max-width: 226px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 170px;
+    }
+
     &:hover,
     .icon-client-logo:hover,
     &:focus,
@@ -17,9 +50,13 @@
     }
   }
   &__logo {
-    width: inherit;
-    height: inherit;
+    width: 100%;
+    height: 100%;
     transition: $transform-icon;
+    padding: 16px 52px;
+    @media screen and (min-width: 1200px) {
+      padding: 16px 32px;
+    }
   }
   &__title {
     @include h2(bold, 36px, center, calc(42 / 36), 50px);

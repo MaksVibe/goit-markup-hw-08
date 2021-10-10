@@ -1,34 +1,11 @@
 // Хедер
-
 .header {
   border-bottom: 1px solid #ececec;
-
-  &__nav {
-    display: flex;
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 80px;
-    margin: 0 auto;
-
-    @media screen and (max-width: 767px) {
-      max-width: 480px;
-      max-height: 60px;
-      margin: 0 auto;
-    }
-
-    @media screen and (min-width: 768px) {
-      max-width: 768px;
-    }
-    @media screen and (min-width: 1200px) {
-      max-width: 1200px;
-    }
   }
 
   &__link {
@@ -55,56 +32,15 @@
 
   &__contacts {
     align-items: center;
-    margin-left: auto;
-
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-      font-size: 12px;
-      line-height: calc(14 / 12);
-      gap: 10px;
-    }
-
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-    &--link {
-      position: relative;
-      padding: 5px 0;
-    }
+    gap: 30px;
 
     &--icon {
-      top: 4px;
-      position: absolute;
-      max-width: 16px;
-      max-height: 16px;
+      width: 20px;
+      height: 16px;
       fill: $text-color;
       transform: translateY(20%);
       transition: $transform-icon;
-
-      @media screen and (min-width: 768px) and (max-width: 1199px) {
-        max-width: 14px;
-        max-height: 14px;
-        &_mail {
-          left: 2px;
-        }
-      }
     }
-    &--cont_mail {
-      margin-left: 25px;
-    }
-    &--cont_phone {
-      margin-left: 21px;
-    }
-  }
-}
-
-.burger__icon {
-  fill: $primary-text-color;
-  width: 40px;
-  height: 40px;
-
-  @media screen and (min-width: 768px) {
-    display: none;
   }
 }
 
@@ -112,11 +48,6 @@
 
 .nav-list {
   gap: 50px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 84px;
-    flex-wrap: nowrap;
-  }
-
   &__link {
     display: inline-block;
     position: relative;
@@ -153,6 +84,30 @@
       content: "";
       left: 0;
       top: calc(100% - 3px);
+    }
+  }
+}
+
+// LOGO
+/* Хедер. Логотип */
+.logo {
+  display: block;
+  margin-right: 43px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  color: $accent-color;
+  line-height: calc(31 / 26);
+  padding-top: 24px;
+  padding-bottom: 25px;
+  &-header {
+    color: $primary-text-color;
+  }
+  &__footer {
+    padding: 0;
+    &--text {
+      color: $white-color;
     }
   }
 }

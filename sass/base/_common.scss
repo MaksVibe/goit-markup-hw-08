@@ -38,8 +38,12 @@ ul {
 
 /* Общие отступы для секций */
 .section {
-  padding-bottom: $padding;
-  padding-top: $padding;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: $padding;
+    padding-top: $padding;
+  }
   margin: 0 auto;
 }
 
