@@ -21,7 +21,7 @@
         <a href="./index.html" class="logo">
           Web<span class="logo-header">Studio</span>
         </a>
-        <div class="burger">
+        <div class="burger" data-open-menu>
           <svg class="burger__icon">
             <use href="./images/sprite.svg#icon-menu"></use>
           </svg>
@@ -75,6 +75,61 @@
             >
           </li>
         </ul>
+        <div class="mobile-menu visually-hidden" data-mobile-menu>
+          <button type="button" class="mobile-menu__btn" data-close-menu>
+            <svg class="mobile-menu__btn--icon">
+              <use href="./images/sprite.svg#vector"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__selected"
+                  >Студия</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="mobile-menu__link"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts">
+            <li>
+              <a href="tel:+380961111111" class="mobile-menu__contacts--link">
+                <span class="mobile-menu__phone">+38 096 111 11 11</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contacts--link"
+              >
+                <span class="mobile-menu__mail">info@devstudio.com</span></a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__networks">
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Instagrm</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Twitter</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Facebook</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -460,7 +515,7 @@
         </div>
       </section>
       <!-- модальное окно -->
-      <!-- <div class="backdrop visually-hidden" data-backdrop>
+      <div class="backdrop visually-hidden" data-backdrop>
         <div class="modal">
           <button type="button" class="modal__btn" data-close-btn>
             <svg class="modal__btn--icon">
@@ -514,16 +569,14 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              Соглашаюсь с рассылкой и принимаю&nbsp;<a
-                href=""
-                class="check__link"
+              Соглашаюсь с рассылкой и принимаю<a href="" class="check__link"
                 >Условия договора</a
               >
             </label>
           </div>
           <button type="submit" class="form__btn">Отправить</button>
         </div>
-      </div> -->
+      </div>
     </main>
     <!--Футер-->
     <footer class="footer">
@@ -619,7 +672,7 @@
         </div>
       </div>
     </footer>
-
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>

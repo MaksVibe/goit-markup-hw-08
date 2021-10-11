@@ -20,7 +20,7 @@
         <a href="./index.html" class="logo">
           Web<span class="logo-header">Studio</span>
         </a>
-        <div class="burger">
+        <div class="burger" data-open-menu>
           <svg class="burger__icon">
             <use href="./images/sprite.svg#icon-menu"></use>
           </svg>
@@ -74,6 +74,63 @@
             >
           </li>
         </ul>
+        <div class="mobile-menu visually-hidden" data-mobile-menu>
+          <button type="button" class="mobile-menu__btn" data-close-menu>
+            <svg class="mobile-menu__btn--icon">
+              <use href="./images/sprite.svg#vector"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__nav-list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__selected"
+                  >Студия</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./portfolio.html"
+                  class="mobile-menu__link mobile-menu__selected"
+                  >Портфолио</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts">
+            <li>
+              <a href="tel:+380961111111" class="mobile-menu__contacts--link">
+                <span class="mobile-menu__phone">+38 096 111 11 11</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contacts--link"
+              >
+                <span class="mobile-menu__mail">info@devstudio.com</span></a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__networks">
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Instagrm</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Twitter</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">Facebook</a>
+            </li>
+            <li class="mobile-menu__networks--item">
+              <a class="mobile-menu__networks--link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -400,11 +457,12 @@
         </div>
       </div>
     </footer>
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
-    ></script>
-    <script src="./js/script.js"></script>
+    ></script> -->
+    <script src="./js/mobile-menu.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>
