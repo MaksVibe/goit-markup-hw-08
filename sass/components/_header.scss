@@ -70,6 +70,10 @@
     &--link {
       position: relative;
       padding: 5px 0;
+      @media screen and (min-width: 1200px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+      }
     }
 
     &--icon {
@@ -87,6 +91,10 @@
         &_mail {
           left: 2px;
         }
+      }
+
+      @media screen and (min-width: 1200px) {
+        top: 30px;
       }
     }
     &--cont_mail {
