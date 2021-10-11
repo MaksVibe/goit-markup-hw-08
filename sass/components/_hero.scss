@@ -32,6 +32,14 @@
     background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
+    // @media (min-device-pixel-ratio: 2),
+    //   (-webkit-min-device-pixel-ratio: 2),
+    //   (min-resolution: 192dpi),
+    //   (min-resolution: 2dppx) {
+    //   .box {
+    //     background-image: url('photo@2x.png');
+    //   }
+    // }
 
     text-align: center;
   }
