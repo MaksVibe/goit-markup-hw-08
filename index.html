@@ -216,12 +216,20 @@
           <ul class="list">
             <li class="services__child">
               <a href="#" class="services__link">
-                <img
-                  class="services__image"
-                  src="./images/what_we_do.jpg"
-                  alt="Программирование"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/img1.jpg    1x,
+                      ./images/about/img1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__image"
+                    src="./images/what_we_do.jpg"
+                    alt="Программирование"
+                  />
+                </picture>
                 <div class="services__link--overlay">
                   <p class="services__text">Десктопные приложения</p>
                 </div>
@@ -229,12 +237,20 @@
             </li>
             <li class="services__child">
               <a href="#" class="services__link">
-                <img
-                  class="services__image"
-                  src="./images/what_we_do2.jpg"
-                  alt="Адаптация под мобильные устройства"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/img3.jpg    1x,
+                      ./images/about/img3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__image"
+                    src="./images/what_we_do2.jpg"
+                    alt="Адаптация под мобильные устройства"
+                  />
+                </picture>
                 <div class="services__link--overlay">
                   <p class="services__text">Мобильные приложения</p>
                 </div>
@@ -242,12 +258,20 @@
             </li>
             <li class="services__child">
               <a href="#" class="services__link">
-                <img
-                  class="services__image"
-                  src="./images/what_we_do3.jpg"
-                  alt="Разработка дизайна"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/about/img2.jpg    1x,
+                      ./images/about/img2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="services__image"
+                    src="./images/what_we_do3.jpg"
+                    alt="Разработка дизайна"
+                  />
+                </picture>
                 <div class="services__link--overlay">
                   <p class="services__text">Дизайнерские решения</p>
                 </div>
@@ -262,11 +286,34 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__list">
             <li class="our-team__member">
-              <img
-                class="our-team__image"
-                src="./images/team/igordem.jpg"
-                alt="Дизайнер продукта Игорь демьяненко"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1/img1-desktop.jpg    1x,
+                    ./images/team-1/img1-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img1-tablet.jpg    1x,
+                    ./images/team-1/img1-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img1-phone.jpg    1x,
+                    ./images/team-1/img1-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/team/igordem.jpg"
+                  alt="Дизайнер продукта Игорь демьяненко"
+                />
+              </picture>
               <h3 class="our-team__member--title">Игорь Демьяненко</h3>
               <p class="our-team__text">Product Designer</p>
               <ul class="networks">
@@ -317,11 +364,30 @@
               </ul>
             </li>
             <li class="our-team__member">
-              <img
-                class="our-team__image"
-                src="./images/team/olgarel.jpg"
-                alt="Фронтенд разработчик Ольга Репина"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1/img2-desktop.jpg    1x,
+                    ./images/team-1/img2-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/team-1/img2-tablet.jpg    1x,
+                    ./images/team-1/img2-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/team-1/img2-phone.jpg    1x,
+                    ./images/team-1/img2-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)" />
+                <img
+                  class="our-team__image"
+                  src="./images/team/olgarel.jpg"
+                  alt="Фронтенд разработчик Ольга Репина"
+              /></picture>
               <h3 class="our-team__member--title">Ольга Репина</h3>
               <p class="our-team__text">Frontend Developer</p>
               <ul class="networks">
@@ -372,11 +438,34 @@
               </ul>
             </li>
             <li class="our-team__member">
-              <img
-                class="our-team__image"
-                src="./images/team/koliatar.jpg"
-                alt="Маркетолог Николай Тарасов"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1/img3-desktop.jpg    1x,
+                    ./images/team-1/img3-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img3-tablet.jpg    1x,
+                    ./images/team-1/img3-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img3-phone.jpg    1x,
+                    ./images/team-1/img3-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/team/koliatar.jpg"
+                  alt="Маркетолог Николай Тарасов"
+                />
+              </picture>
               <h3 class="our-team__member--title">Николай Тарасов</h3>
               <p class="our-team__text">Marketing</p>
               <ul class="networks">
@@ -423,11 +512,34 @@
               </ul>
             </li>
             <li class="our-team__member">
-              <img
-                class="our-team__image"
-                src="./images/team/michailerm.jpg"
-                alt="UI Дизайнер Михаил Ермаков"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team-1/img4-desktop.jpg    1x,
+                    ./images/team-1/img4-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img4-tablet.jpg    1x,
+                    ./images/team-1/img4-tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team-1/img4-phone.jpg    1x,
+                    ./images/team-1/img4-phone@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="our-team__image"
+                  src="./images/team/michailerm.jpg"
+                  alt="UI Дизайнер Михаил Ермаков"
+                />
+              </picture>
               <h3 class="our-team__member--title">Михаил Ермаков</h3>
               <p class="our-team__text">UI Designer</p>
               <ul class="networks">
