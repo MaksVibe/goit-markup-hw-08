@@ -1,6 +1,7 @@
 /* Постоянные клиенты */
 .clients {
   &__container {
+    width: 100%;
     @media screen and (max-width: 767px) {
       max-width: 480px;
     }
@@ -13,6 +14,7 @@
   }
 
   &__list {
+    justify-content: center;
     @media screen and (min-width: 480px) {
       flex-basis: calc(100% / 2 - 30px);
     }
